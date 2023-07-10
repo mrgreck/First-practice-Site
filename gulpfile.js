@@ -6,7 +6,7 @@ const browsersync = require('browser-sync').create();
 
 
 function scripts(){
-    return src('src/js/**.js')
+    return src('src/js/main.js')
     .pipe(concat('main.min.js'))
     .pipe(uglify())
     .pipe(dest('src/js'))
@@ -16,7 +16,7 @@ function scripts(){
 
 
 function styles(){
-	return src('src/scss/**.scss')
+	return src('src/scss/*.scss')
     .pipe(concat('styles.min.css'))
     .pipe(scss({outputStyle:'compressed'}))
     .pipe(dest('src/css'))
@@ -24,7 +24,7 @@ function styles(){
 }
 
 function watching(){
-    watch(['src/scss/stayle.scss'],styles)
+    watch(['src/scss/*.scss'],styles)
     watch(['src/js/main.js'],scripts)
     watch(['src/*.html']).on('change', browsersync.reload)
 }
