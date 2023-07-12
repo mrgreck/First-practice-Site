@@ -1,0 +1,97 @@
+.Specialties{
+    width: 100%;
+    height: 675px;
+
+    background-image: url('../img/specialty\'s-bg.png');
+    
+
+    .HeadText{
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+
+        p{
+            color: #FFF;
+            text-align: center;
+            /* Caption */
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 14px;
+            letter-spacing: 6px;
+            text-transform: uppercase;            
+        }
+    }
+
+    .block{
+        display: flex;
+        justify-content: center;
+        margin:0 auto;
+        align-items:center;
+        gap: 80px;
+        
+        .image{
+            
+            width: 475px;
+            height: 475px;
+            border-radius: 5px;
+            background: url('../img/Rectangle.png'), lightgray 50% / cover no-repeat;
+        }
+
+        .text{
+            width: 600px;
+            height: 241px;
+
+            h2{
+                display: flex;
+                width: 600px;
+                height: 56px;
+                flex-direction: column;
+                
+                color: #FFF;
+                text-align: center;
+                /* Heading 2 */
+                font-family: "Acme";
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 48px;
+                text-transform: uppercase;                
+            }
+
+            .Rectangle2{
+                margin-bottom: 10px;
+            }
+
+            p{
+                margin-bottom: 20px;
+                color: rgba(255, 255, 255, 0.60);
+                text-align: center;
+                font-family: "Open Sans";
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px; 
+    
+                
+    
+                
+                span{
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    color: rgba(255, 255, 255, 0.9);
+                    text-align: center;
+                    font-family: "Open Sans";
+                    font-size: 19px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 28px; 
+                }                
+            }
+        }
+    }
+    
+}
