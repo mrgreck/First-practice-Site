@@ -1,0 +1,121 @@
+.Contact{
+    padding-top: 90px;
+    width: 1156px;
+    height: 475px;
+    margin:0 auto;    
+
+    h2{
+        
+        display: flex;
+        width: 1155px;
+        height: 56px;
+        flex-direction: column;     
+        
+        color: #000;
+        text-align: center;
+        /* Heading 2 */
+        font-family: "Acme";
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48px;
+        text-transform: uppercase;        
+    }
+
+
+    p{
+        margin:0 auto; 
+        display: flex;
+        width: 565px;
+        height: 76px;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        color: #000;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+
+    .form{
+        padding-top: 50px;
+        padding-bottom: 43px;
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        grid-template-rows: 60px 120px;
+        gap: 8px;
+
+        input:focus{
+            border-radius: 5px;
+            border: 1px solid #E8C300;
+            background: #FFF;
+            outline-offset: 0px;
+            outline: none
+        }
+
+
+        input{
+            border-radius: 5px;
+            background: #E5E5E5;
+            border: 0px solid #ffffff00;
+            padding-left: 15px;
+            padding-right: 15px;
+
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+
+        textarea:focus{
+            border-radius: 5px;
+            border: 1px solid #E8C300;
+            background: #FFF;
+            outline-offset: 0px;
+            outline: none
+        }
+
+        textarea{  
+            border-radius: 5px;
+            background: #E5E5E5;
+            border: 0px solid #ffffff00;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            resize: none;
+
+
+
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+
+
+        .box2{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        
+
+    }
+
+
+    .Rectangle{
+        
+        margin: 0 auto;
+        width: 640px;
+        height: 60px;
+        background: #E8C300;
+    }
+}

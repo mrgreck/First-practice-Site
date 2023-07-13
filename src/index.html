@@ -82,9 +82,13 @@
                     <input type="text" id="name" name="name" required size="10"  placeholder="Name">
                     <input type="text" id="email" name="email" required size="10" placeholder="Email">
                     <input type="text" id="phone" name="phone" required size="10" placeholder="Phone">
-                    <input type="text" id="people" name="people" required size="10" placeholder="People">
+                    <select name="people" id="people">
+                        <option value="default">People</option>
+                    </select>
                     <input type="text" id="date" name="date" required size="10" placeholder="Date (mm/dd)">
-                    <input type="text" id="time" name="time" required size="10" placeholder="Time">
+                    <select name="time" id="time">
+                        <option value="default">Time</option>
+                    </select>
                 </div>
                 <button class="Rectangle">
                     <p>BOOK NOW</p>
@@ -120,6 +124,23 @@
                 </p>
             </div> 
         </div>
+    </div>
+
+
+    <div class="Contact">
+        <h2>CONTACT</h2>
+        <div class="Rectangle2"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+        <div class="form">
+            <input class="box1" type="text" id="name" name="name" required size="10"  placeholder="Name">
+            <input class="box1" type="text" id="email" name="email" required size="10"  placeholder="Email">
+            <input class="box1" type="text" id="phone" name="phone" required size="10"  placeholder="Phone">
+            
+            <textarea class="box2" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        </div>
+        <button class="Rectangle">
+            <p>SEND MESSAGE</p>
+        </button>
     </div>
 
 </body>

@@ -85,6 +85,44 @@
                     font-weight: 400;
                     line-height: normal;                    
                 }
+
+
+                select:focus{
+                    border-radius: 5px;
+                    border: 1px solid #E8C300;
+                    background: #FFF;
+                    outline-offset: 0px;
+                    outline: none
+                }
+
+                select::placeholder{
+                    color: rgba(51, 51, 51, 0.50);
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    
+                }
+
+
+                select{
+                    padding-left: 15px;
+                    
+                    border-radius: 5px;
+                    background: #E5E5E5;
+                    border: 0px solid #ffffff00;
+
+                    
+                    color: #2E2E2E;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;                    
+                }
+
+
             }
 
             .Rectangle{
