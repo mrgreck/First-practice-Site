@@ -5,33 +5,56 @@ $Width : 1440px;
 $Height : 800px;
 
 
-
 .Header{
-    background-image: url('../img/header-bg.png');
+    background: url('../img/header-bg.png');
+    background-size:cover;
     width: 100%;
-    height: 800px;
+    min-height: 800px;
 
     color: #FFF;
+
+    .Hamburger{
+        display: none;
+    }
+    
 }
+
+
+
+
+
 
 .HeaderButton{
     display: flex;
     
     justify-content: center;
-    a{
-        color: #FFF;
-        
-        text-align: center;
-        font-family: "Open Sans";
-        font-size: 12px;
+    padding:0px;
+    
 
-        text-decoration:none;
-        
-        vertical-align: middle;
-        line-height: 90px;
-
+    li{
+        display: flex;
+        justify-content: center;
         width: 133px;
         height: 100px;
+
+        list-style-type: none;
+        a{
+            color: #FFF;
+            
+            text-align: center;
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-weight: 700;
+            text-decoration:none;
+            
+            vertical-align: middle;
+            line-height: 90px;
+            
+            &:hover{
+                color: #f3f161;
+            }
+            
+        }
     }
 
     svg{
@@ -39,7 +62,10 @@ $Height : 800px;
         margin-left: 35px;
         margin-right: 35px;
     }
-        
+      
+    
+    
+
 }
 
 
@@ -55,15 +81,8 @@ $Height : 800px;
     .ButtonBlock{
         display: flex;
         justify-content: center;
-        gap:40px;
-        
+        gap:40px; 
     }
-
-
-    
-
-    
-
 
     p{
         display: flex;
@@ -89,7 +108,7 @@ $Height : 800px;
         display: flex;
         text-align: center;
         font-family: "Acme";
-        font-size: 96px;
+        font-size: 96px; 
         font-style: normal;
         font-weight: 400;
         line-height: 0px;
@@ -100,6 +119,133 @@ $Height : 800px;
         flex-direction: column;
         justify-content: center;
 
+    } 
+
+}
+
+.Menu{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+    .Block{
+        margin-top: 100px;
+        padding-bottom : 100px;
     }
 
+    
+    .HeaderButton{
+        display: none;
+    }
+
+    .Menu{
+        position: fixed;
+        left: 0;
+        right: 0;
+        transform: translateY(-200%);
+        transition: transform 0.5s;
+        display: grid;
+        margin: 0 auto;
+        justify-content: center;
+        padding:0px;
+        
+    
+        li{
+            display: flex;
+            justify-content: center;
+            width: 133px;
+            height: 100px;
+    
+            list-style-type: none;
+            a{
+                color: #FFF;
+                
+                text-align: center;
+                font-family: "Open Sans";
+                font-size: 12px;
+                font-weight: 700;
+                text-decoration:none;
+                
+                vertical-align: middle;
+                line-height: 90px;
+        
+                &:hover{
+                    color: #f3f161;
+                }
+            }
+        }
+    }
+
+    .Header{
+        .Hamburger{
+            transition: transform 0.5s;
+            display: grid;
+            margin: 0 auto;
+        }
+    }
+    
+    
+}
+
+
+@media (max-width: 770px){
+    .Block{
+        height: 210px;
+
+        h1{
+            font-size: 60px;
+        }
+
+        .Rectangle{
+            width: 150px;
+            height: 50px;
+        }
+    }
+}
+
+
+@media (max-width: 410px){
+    .Block{
+        height: 210px;
+
+        h1{
+            font-size: 40px;
+        }
+
+        .Rectangle{
+            width: 150px;
+            height: 50px;
+        }
+    }
+}
+
+
+
+
+
+.showMenu{
+
+    transform: translateY(0);
+    position: relative;
+    margin: 0 auto;
+    li{
+        
+        display: grid;
+        margin: 0 auto;
+        height: 50px;
+        
+        
+    }
+    
+    svg{
+        display: none;
+    }
 }

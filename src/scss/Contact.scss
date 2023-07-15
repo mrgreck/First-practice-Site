@@ -48,6 +48,7 @@
         grid-template-columns: repeat(3, 380px);
         grid-template-rows: 60px 120px;
         gap: 8px;
+        justify-content: center;
 
         input:focus{
             border-radius: 5px;
@@ -110,12 +111,13 @@
 
     }
 
-
     .Rectangle{
-        
+            
         margin: 0 auto;
         width: 640px;
         height: 60px;
         background: #E8C300;
+
     }
+    
 }
