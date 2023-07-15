@@ -18,6 +18,7 @@ html{
     justify-content: center;
 
     p{
+        display: flex;
         width: 90%;
         height: 100%;
         flex-direction: column;
@@ -54,3 +55,16 @@ html{
 }
 
 
+@media (max-width: 1200px){
+
+}
+@media (max-width: 1000px){
+    
+}
+@media (max-width: 7070px){
+    
+}
+
+@media (max-width: 420px){
+    
+}
